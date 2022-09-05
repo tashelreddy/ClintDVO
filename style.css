@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    .dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    }
+    
+    a:visited{
+  text-decoration: none;
+    }
+
+    a:focus{
+      text-decoration: none;
+    }
+      
+    #icon{
+    width: 26px;
+    cursor: pointer;
+    }
+    
+    .logo{
+      width: 150px;
+      height: 100px;
+      cursor: pointer; 
+      color: #EA5D00;
+      font-size: 25px;
+      }
+
+      .logo span {
+        color: #fff;
+        }
+
+       .logo img{
+        width: 80%;
+        }
+
+        p .logo{
+          margin-left: 55px;
+          margin-right: 12px;
+        }
+         span .dot{
+          color: #EA5D00;
+        }
+
+        .typewriter p {
+          color: #fff, #EA5D00;
+          font-family: poppins;
+          overflow: hidden; /* Ensures the content is not revealed until the animation */
+          border-right: .15em solid #EA5D00; /* The typwriter cursor */
+          white-space: nowrap; /* Keeps the content on a single line */
+          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+          margin-left: 35px;
+          letter-spacing: .15em; /* Adjust as needed */
+          animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .3s step-end infinite;
+        }
+        
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+        
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: #000 }
+        }
+        
+           
+    nav ul{
+    flex:1;
+    text-align: right;
+    }
+    
+    .hero{
+    height: 123vh;
+    width: 100vw;   
+    background: black;
+    font-family: sans-serif;
+    position: relative;
+   }
+      
+     /* The navigation menu */
+
+     
+  video{
+    display: flex;
+  }
+ 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+    }
+   
+    .nav{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    background-color: #000;
+    }
+   
+    /* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menu {			
+  margin: 50px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menu > li {
+  background: #000;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #EA5D00;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: italic;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background: #fff;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+
+    .info{
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-bottom: 15px;
+    top: -5px;
+    position: relative;
+    }
+    
+    .info h1{
+    font-size: 70px;
+    color: #EA5D00;
+    margin-bottom: 20px;
+    }
+    
+
+    h1 span{
+    color: #fff;
+    }
+    
+    .info p{
+    color: #fff;
+    line-height: 22px;
+    }
+    
+    .info a{
+    background: #EA5D00;   
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    }
+    
+ .column img{
+    width: 20%;
+    height: 10vh;
+    border-radius: 50px;
+ }
+    .row {
+        display: flex;
+      }
+      
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+/*img box*/
+    .img-box{
+   width: 30%;  
+   height: 80%;  
+   position: absolute;
+   bottom: 0;
+   right: 100px;
+   }
+     
+   .img-box img{ 
+   height: 100%;  
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   right: 100px;
+   transform: translateX(-50%);
+   transition: bottom 1s, left 1s;
+   }
+   
+    .img-box:hover .back-img{
+    bottom: 40px;
+    }
+      
+    .img-box:hover .main-img{
+    left: 54%;
+    }
+
+    /*Social links*/
+      
+    .social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+    
+    .social-links a{
+    font-size: 20px;   
+    color: #fff;
+    margin-right: 20px;
+    }
+    
+    .social-links a:hover{
+    color: #EA5D00;
+    }
+    
+
+    /*Footer*/
+
+    #footer{
+    width: 100%;
+    align-items: center;
+    top: 0;
+    position: relative;
+    }
+
+    .footer-row{
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: -15px 35px -15px ;
+      }
+      
+      .footer-col-2,.footer-col-2, .footer-col-2{
+      flex-basis: 25%;
+      margin-bottom: 10px;
+      padding: 10px;
+      }
+      
+      .footer-right{
+        text-align: right;
+      }
+      .footer-center{
+        text-align: center;
+      }
+      
+      .footer-col-2 img{
+        width: 80px;
+      }
+      
+      .footer-row h1{
+      margin: 5px 0;
+      color: #EA5D00;
+      }
+      
+      .footer-col-2 .fa ,.footer-col-2 .fa, .footer-col-2 .fa{
+        margin-right: 6px;
+        padding: 3px;
+        color: #EA5D00;
+      }
+
+      .copyright{
+      font-size: 15px;
+      opacity: 0.3;
+      }   
+   
+   
+   
+   
+   
+      
+      
+     
+     
+      
+

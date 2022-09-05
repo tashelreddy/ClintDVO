@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="" href=".html.html">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300;400&display=swap"
+ rel="stylesheet"> 
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+<link rel="stylesheet" href="video.css">
+<title>Portfolio-Video Demos</title>
+</head>
+
+<!-- The navigation menu -->
+    
+<div class="nav">
+  <video width="250" height="100" autoplay muted loop>
+    <source src="./media/video.mp4" type="video/mp4">
+
+    </video>
+  
+    <ul class="menu cf">
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <ul class="submenu">
+          <li><a href="audiodemos.html">Audio Demos</a></li>
+          <li> <a href="videodemos.html">Video Demos</a></li>
+          <li> <a href="#">Editing Demos</a></li>
+        </ul>			
+      </li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="hireme.html">Hire Me</a></li>
+    </ul>
+ </div>
+<!--end of navigation menu-->
+
+<div class="container">
+  <h1>Video Demos</h1>
+  <div class="row">
+    <div class="col">
+      <h3>
+        Businesses every day are using videos to sell their brands and as part of their marketing. 
+        Therefore, they need access to experienced VO talent to voice their projects. 
+        Some of my voice talents include E-learning narration, documentary narration,
+        training and compliance videos, animation, 
+        accents and character voices, etc.
+        <br>
+        I love the challenge of looking at a long-form script and 
+        nailing the delivery so that the final video project truly pops. <br>
+        <br>
+        <strong>See for yourself. Below, you can browse my video voice over library.</strong>
+        </h3>
+        <hr>
+      <div class="feature">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GD1RIDPxpZo" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+          
+      </div> 
+      <div class="box">
+        <h3>Ready To Work Together?</h3>
+        <a href="hireme.html"><span>Let's Chat</span></a>
+         </div>   
+    </div>
+  <div class="col">
+    <div class="small-img-row">
+      <div class="small-img">
+        <img src="./images/kfc-brandlogo.net.png" width="100px">
+        <img src="./images/play icon.png" class="playbtn" onclick="playVideo('./media/KFC_CLINTDVO_JAMAICAN_VOICEOVER_AUTHENTIC JAMAICAN_JAMAICAN UK_JAMAICAN AMERICAN.mov')">
+      </div>
+      <p>KFC 
+        <br>
+        VO talent - Clintdvo
+      </p>
+    </div>
+    <div class="small-img-row">
+      <div class="small-img">
+        <img src="./images/who's the daddy.png" width="100px">
+        <img src="./images/play icon.png" class="playbtn" onclick="playVideo('./media/Leave The Door Open(-3db).mp4')">
+      </div>
+      <p>Who's the daddy
+        <br>
+        VO talent - Clintdvo
+      </p>
+    </div>
+    <div class="small-img-row">
+      <div class="small-img">
+        <img src="./images/atl-logo.webp" width="100px">
+        <img src="./images/play icon.png" class="playbtn" onclick="playVideo('./media/Its Electric atl automotive.mp4')">
+      </div>
+      <p>Atl Group
+        <br>
+        VO talent - Clintdvo
+      </p>
+    </div>
+    <div class="small-img-row">
+      <div class="small-img">
+        <img src="./images/CDVO- Producer- Logo.png" width="100px">
+        <img src="./images/play icon.png" class="playbtn" onclick="playVideo('./media/raiden draft.mp4')">
+      </div>
+      <p>Raiden Draft video
+        <br>
+        VO talent - Clintdvo
+      </p>
+    </div>
+  
+  </div>
+</div>
+</div>
+
+<div class="video-player" id="videoPlayer">
+  <video width="100%" controls autoplay id="voVideo">
+    <source src="./media/KFC_CLINTDVO_JAMAICAN_VOICEOVER_AUTHENTIC JAMAICAN_JAMAICAN UK_JAMAICAN AMERICAN.mov" type="video/mp4">
+    </video>
+    <img src="./images/close icon.png" class="close-btn"
+    onclick="stopVideo()">
+</div>
+
+<script>
+var videoPlayer = document.getElementById("videoPlayer");
+var voVideo = document.getElementById("voVideo");
+
+function stopVideo(){
+  
+  videoPlayer.style.display = "none";
+}
+
+function playVideo(file){
+voVideo.src = file;
+videoPlayer.style.display = "block";
+}
+</script>
+
+<!--Footer-->
+<section>
+<section id="footer">
+   <div class="footer-row"> 
+<div class="footer-col-2">
+ <h1>Email</h1>
+ <p><i class="fa fa-paper-plane"></i>clintdvo@gmail.com</p>
+</div>
+<div class="footer-col-2">
+ <a href="index.html"><img src="./images/orange logo.png"></a>
+  <p class=copyright> © 2022 clintdvo </p>
+  </div>
+
+  <div class="footer-col-2">
+     <h1>Whatsapp</h1>
+     <p><i class="fa fa-whatsapp"></i> 1 876-373-7670</p>
+      <br>
+    </div>
+
+ </div>
+</div>
+</section>
+</section>
+<!--end of footer-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="" href=".html.html">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300;400&display=swap"
+ rel="stylesheet"> 
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+<title>hire me</title>
+<link rel="stylesheet" href="hire.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+
+
+<body>
+<!-- The navigation menu -->
+    
+<div class="nav">
+  <a href="index.html"><h1 class="logo"><img src="./images/orange logo.PNG"></h1></a>
+    <ul class="menu cf">
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <ul class="submenu">
+          <li><a href="audiodemos.html">Audio Demos</a></li>
+          <li> <a href="videodemos.html">Video Demos</a></li>
+          <li> <a href="#">Editing Demos</a></li>
+        </ul>			
+      </li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="hireme.html">Hire Me</a></li>
+    </ul>
+ </div>
+<!--end of navigation menu-->
+
+ <section class="image"></section>
+ 
+
+ <!--container section-->
+ <section>
+<div class="container">
+<p>
+    Inquire About My Professional Voice-over services here.
+    <br>
+    Same day delivery on voice-over scripts 70-1000 word count.
+    <br>
+    Phone: 876-373-7670
+    <br>
+    Email: clintdvo@gmail.com
+</p>
+<form id="contact_form" action="#">
+<a href="#"><h3>Contact Me</h3></a>
+<input type="text" id="name" placeholder="Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="text" id="phone" placeholder="Phone">
+<textarea id="msg" rows="4" placeholder="How Can I help you? Send your script or enquery here" required></textarea>
+<button type="Submit">Send Message</button>
+</form>
+</div>
+</section>
+<!--container section ends-->
+
+<!--Footer-->
+<section>
+  <section id="footer">
+   <div class="footer-row"> 
+   <div class="footer-col-2">
+     <h1>Email</h1>
+     <p><i class="fa fa-paper-plane"></i>clintdvo@gmail.com</p>
+   </div>
+   <div class="footer-col-2">
+     <a href="index.html"><img src="./images/orange logo.png"></a>
+      <p class=copyright> © 2022 clintdvo </p>
+      </div>
+  
+      <div class="footer-col-2">
+         <h1>Whatsapp</h1>
+         <p><i class="fa fa-whatsapp"></i> 1 876-373-7670</p>
+          <br>
+        </div>
+  
+     </div>
+    </div>
+  </section>
+  </section>
+ 
+
+<script>
+  //function to send the message when click on button send
+  function sendMsg(e){
+  e.preventDefault();
+  const form = document.getElementById('contact_form');
+  name = document.getElementById('name');
+  email = document.getElementById('email');
+  msg = document.getElementById('msg');
+
+  //function send Email ...
+  Email.send({
+  SecureToken : "024f74d8-ad43-4c72-8014-98590fa9b05e",
+  To : 'tashelreddy@gmail.com',
+  From : "email.value",
+  Subject : "Contact Form Enquiry",
+  Body : "msg.value"
+  }).then(
+  message => alert(message)
+  );
+  }
+
+
+//add the event listener submit
+form.addEventListener('submit', sendMsg);
+</script>
+
+
+
+</body>
+</html>
+  
+
+
+
+

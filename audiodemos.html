@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="" href=".html.html">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300;400&display=swap"
+ rel="stylesheet"> 
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+<link rel="stylesheet" href="audio.css">
+<title>Portfolio-Audio Demos</title>
+<script src="script.js" defer></script>
+
+
+</head>
+
+<!-- The navigation menu -->
+    
+<div class="nav">
+  <video width="250" height="100" autoplay muted loop>
+    <source src="./media/video.mp4" type="video/mp4">
+
+    </video>
+  
+    <ul class="menu cf">
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <ul class="submenu">
+          <li><a href="audiodemos.html">Audio Demos</a></li>
+          <li> <a href="videodemos.html">Video Demos</a></li>
+          <li> <a href="#">Editing Demos</a></li>
+        </ul>			
+      </li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="hireme.html">Hire Me</a></li>
+    </ul>
+ </div>
+<!--end of navigation menu-->
+
+<div class="container">
+  <h1>Audio Demos</h1>
+  <div class="row">
+    <div class="col">
+      <h3>
+        In addition to doing freelance voice overs for nearly 12 years,
+         I've also worked on the other side of the mic as a musician and keyboardist. 
+         As a result, I'm a more effective voice over talent because I “get” how producers and recording engineers think.
+        Not to mention I have my own  recording studio, including a sound treated booth, no amateur recordings here.
+         <br>
+        <br>
+       <strong>Check out my audio demos below. Click on the play button and take a listen.</strong>
+        </h3>
+        <hr>
+      <div class="feature">
+        <img src="./images/CDVO- Producer- Logo.png" width="80%"> 
+      </div> 
+
+      <div class="box">
+        <h3>Ready To Work With Me?!</h3>
+        <a href="hireme.html"><span>Let's Chat</span></a>
+         </div>   
+    </div>
+  <div class="col">
+    <div class="small-img-row">
+      <div class="player">
+        <div class="wrapper">
+            <div class="details">
+                <div class="now-playing">Demo x OF y</div>
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+ 
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                 <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                 <div class="total-duration">00:00</div>
+            </div>
+ 
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                 <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                 <i class="fa fa-volume-up"></i>
+            </div>
+ 
+            <div class="buttons">
+                <div class="random-track" onclick="randomTrack()">
+                    <i class="fa fa-random fa-2x" title="random"></i>
+                </div>
+                <div class="prev-track" onclick="prevTrack()">
+                     <i class="fa fa-step-backward fa-2x"></i>
+                 </div>
+                 <div class="playpause-track" onclick="playpauseTrack()">
+                     <i class="fa fa-play-circle fa-5x"></i>
+                 </div>
+                 <div class="next-track" onclick="nextTrack()">
+                     <i class="fa fa-step-forward fa-2x"></i>
+                 </div>
+                 <div class="repeat-track" onclick="repeatTrack()">
+                     <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                 </div>
+            </div>
+ 
+             <div id="wave">
+                 <span class="stroke"></span>
+                 <span class="stroke"></span>
+                 <span class="stroke"></span>
+                 <span class="stroke"></span>
+                 <span class="stroke"></span>
+                 <span class="stroke"></span>
+                 <span class="stroke"></span>
+             </div>  
+        </div>
+    </div>
+ 
+    </div>
+    </div>
+  
+  </div>
+</div>
+
+<!--Footer-->
+<section>
+<section id="footer">
+   <div class="footer-row"> 
+<div class="footer-col-2">
+ <h1>Email</h1>
+ <p><i class="fa fa-paper-plane"></i>clintdvo@gmail.com</p>
+</div>
+<div class="footer-col-2">
+ <a href="index.html"><img src="./images/orange logo.png"></a>
+  <p class=copyright> © 2022 clintdvo </p>
+  </div>
+
+  <div class="footer-col-2">
+     <h1>Whatsapp</h1>
+     <p><i class="fa fa-whatsapp"></i> 1 876-373-7670</p>
+      <br>
+    </div>
+
+ </div>
+</div>
+</section>
+</section>
+<!--end of footer-->
+
+
+
+</body>
+</html>

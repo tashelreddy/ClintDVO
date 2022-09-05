@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="" href=".html.html">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@300;400&display=swap"
+ rel="stylesheet"> 
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet">
+<title>Portfolio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    
+    .dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    }
+    
+    .logo{
+  width: 150px;
+  height: 100px;
+  cursor: pointer; 
+  color: #EA5D00;
+  margin-left: 40px ;
+  }
+
+.logo span {
+  color: #fff;
+  }
+ .logo img{
+  width: 80%;
+  }
+
+  
+
+   video{
+    display: flex;
+  }
+  
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul{
+    flex:1;
+    text-align: right;
+    }
+   
+    .nav{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    background-color: #000;
+    }
+   
+    /* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menu {			
+  margin: 50px auto;
+  width: 800px;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menu > li {
+  background: #000;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #EA5D00;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: italic;
+  font-size: 14px;
+}		
+
+.menu li:hover {
+  background: #fff;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;		
+}						
+
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+/*Footer*/
+#footer{
+ width: 100%;
+ align-items: center;
+ top: 0;
+ position: relative;
+ background-color: #000;
+margin-top: 120px;
+ }
+ .footer-row{
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: -15px 35px -15px ;
+   }
+   
+   .footer-col-2,.footer-col-2, .footer-col-2{
+   flex-basis: 25%;
+   margin-bottom: 10px;
+   padding: 10px;
+   }
+
+   .footer-col-2,.footer-col-2, .footer-col-2 p{
+    color: #fff;
+   }
+   
+   .footer-right{
+     text-align: right;
+   }
+   .footer-center{
+     text-align: center;
+   }
+   
+   .footer-col-2 img{
+     width: 80px;
+   }
+   
+   .footer-row h1{
+   margin: 5px 0;
+   color: #EA5D00;
+   }
+   
+   .footer-col-2 .fa ,.footer-col-2 .fa, .footer-col-2 .fa{
+     margin-right: 6px;
+     padding: 3px;
+     color: #EA5D00;
+   }
+   .copyright{
+   font-size: 15px;
+   opacity: 0.3;
+   }   
+</style>
+</head>
+
+<!-- The navigation menu -->
+    
+<div class="nav">
+  <video width="250" height="100" autoplay muted loop>
+    <source src="./media/video.mp4" type="video/mp4">
+    </video>
+  
+    <ul class="menu cf">
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <ul class="submenu">
+          <li><a href="audiodemos.html">Audio Demos</a></li>
+          <li> <a href="videodemos.html">Video Demos</a></li>
+          <li> <a href="#">Editing Demos</a></li>
+        </ul>			
+      </li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="hireme.html">Hire Me</a></li>
+    </ul>
+ </div>
+<!--end of navigation menu-->
+
+
+
+
+<!--Footer-->
+<section>
+<section id="footer">
+   <div class="footer-row"> 
+<div class="footer-col-2">
+ <h1>Email</h1>
+ <p><i class="fa fa-paper-plane"></i>clintdvo@gmail.com</p>
+</div>
+<div class="footer-col-2">
+ <a href="index.html"><img src="./images/orange logo.png"></a>
+  <p class=copyright> © 2022 clintdvo </p>
+  </div>
+
+  <div class="footer-col-2">
+     <h1>Whatsapp</h1>
+     <p><i class="fa fa-whatsapp"></i> 1 876-373-7670</p>
+      <br>
+    </div>
+
+ </div>
+</div>
+</section>
+</section>
+<!--end of footer-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./main.js"></script>
+
+
+
+</body>
+</html>
